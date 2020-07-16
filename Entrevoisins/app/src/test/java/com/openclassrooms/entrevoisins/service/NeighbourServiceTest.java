@@ -60,14 +60,13 @@ public class NeighbourServiceTest {
     @Test
     public void neighbourIsFavorite() {
 
-        List<Neighbour> neighboursFav = service.getFavoritesNeighbour();
         List<Neighbour> neighbours = DummyNeighbourGenerator.DUMMY_NEIGHBOURS;
         List<Neighbour> neighboursFavExpected = new ArrayList<>();
 
         for (Neighbour neighbour : neighbours) {
             if (neighbour.getFavorite())
                 neighboursFavExpected.add(neighbour);
-        }
-        assertEquals(neighboursFavExpected,neighboursFav);
+            assertTrue(neighboursFavExpected.contains(neighbour));
+    }
     }
 }
