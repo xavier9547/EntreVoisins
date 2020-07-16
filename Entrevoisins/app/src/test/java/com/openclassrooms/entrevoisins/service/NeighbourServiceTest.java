@@ -11,6 +11,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static org.hamcrest.CoreMatchers.is;
@@ -59,14 +60,14 @@ public class NeighbourServiceTest {
 
     @Test
     public void neighbourIsFavorite() {
-
+        List<Neighbour> neighboursFav = service.getFavoritesNeighbour();
         List<Neighbour> neighbours = DummyNeighbourGenerator.DUMMY_NEIGHBOURS;
         List<Neighbour> neighboursFavExpected = new ArrayList<>();
 
         for (Neighbour neighbour : neighbours) {
             if (neighbour.getFavorite())
                 neighboursFavExpected.add(neighbour);
-            assertTrue(neighboursFavExpected.contains(neighbour));
-    }
+        }
+        assertTrue(neighboursFavExpected.equals(neighboursFav));
     }
 }
