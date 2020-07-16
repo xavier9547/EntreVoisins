@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2012077334/EntreVoisins-Entrevoisins.iml" filepath="$PROJECT_DIR$/.idea/modules/-2012077334/EntreVoisins-Entrevoisins.iml" group="Entrevoisins" />
+      <module fileurl="file://$PROJECT_DIR$/../Entrevoisins.iml" filepath="$PROJECT_DIR$/../Entrevoisins.iml" group="Entrevoisins" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Entrevoisins-app.iml" filepath="$PROJECT_DIR$/.idea/modules/Entrevoisins-app.iml" group="Entrevoisins/app" />
+      <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" group="Entrevoisins/app" />
+    </modules>
+  </component>
+</project>
